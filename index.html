@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I'm Sorry ❤️</title>
+
+<style>
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  color: #e63946;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Forgive button */
+#forgive {
+  background: #e63946;
+  color: white;
+}
+
+/* Not forgive button */
+#notForgive {
+  background: gray;
+  color: white;
+  position: relative;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1>I'm Sorry My Princess ❤️</h1>
+
+  <p>
+    My love, <br><br>
+    I know I hurt you and I’m really sorry.  
+    You are the most important person in my life.  
+    Please forgive me… I promise I’ll never repeat my mistake. 💖
+  </p>
+
+  <!-- Buttons -->
+  <button id="forgive" onclick="forgiveMe()">
+    I Forgive You ❤️
+  </button>
+
+  <button id="notForgive" onmouseover="moveButton()">
+    Not Forgive 😢
+  </button>
+
+</div>
+
+<script>
+function forgiveMe() {
+  alert("Thank you for forgiving me ❤️ I love you forever!");
+}
+
+/* Move Not Forgive button when she tries to click */
+function moveButton() {
+  var button = document.getElementById("notForgive");
+
+  var x = Math.random() * 300;
+  var y = Math.random() * 300;
+
+  button.style.position = "absolute";
+  button.style.left = x + "px";
+  button.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
